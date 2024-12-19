@@ -87,7 +87,7 @@ function App() {
               </div>
               <div className="mt-6">
                 <p>Languages</p>
-                <div className="flex flex-row gap-2 mt-2">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mt-2">
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
                     C#
                   </button>
@@ -112,8 +112,6 @@ function App() {
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
                     PHP
                   </button>
-                </div>
-                <div className="flex flex-row gap-2 mt-2">
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
                     ASP Net MVC
                   </button>
