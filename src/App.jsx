@@ -46,38 +46,39 @@ function App() {
                 Aspiring Fullstack Web Developer | Developer at PSITS UC-MAIN
               </p>
 
-              <div className="flex flex-row gap-2 mt-3">
+              <div className="flex flex-wrap justify-center gap-2 mt-3">
                 <a
                   href="https://www.facebook.com/jgenabs"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black"
+                  className="border p-2 rounded flex items-center gap-2 hover:bg-white hover:text-black w-full sm:w-auto"
                 >
-                  <FaFacebook className="mt-1" />
+                  <FaFacebook />
                   Facebook
                 </a>
                 <a
                   href="https://github.com/Javabutdif"
-                  className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black"
+                  className="border p-2 rounded flex items-center gap-2 hover:bg-white hover:text-black w-full sm:w-auto"
                 >
-                  <FaGithub className="mt-1" />
+                  <FaGithub />
                   Github
                 </a>
                 <a
                   href="https://www.credly.com/users/anton-james-genabio"
-                  className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black"
+                  className="border p-2 rounded flex items-center gap-2 hover:bg-white hover:text-black w-full sm:w-auto"
                 >
-                  <LuBadgeCheck className="mt-1" />
+                  <LuBadgeCheck />
                   Credly Badges
                 </a>
                 <a
                   href="https://www.linkedin.com/in/anton-james-genabio-2a4149316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black"
+                  className="border p-2 rounded flex items-center gap-2 hover:bg-white hover:text-black w-full sm:w-auto"
                 >
-                  <FaLinkedin className="mt-1" />
+                  <FaLinkedin />
                   LinkedIn
                 </a>
               </div>
+
               <div className="mt-6">
                 <p>Languages</p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-2 mt-2">
