@@ -1,48 +1,34 @@
 import React, { useState } from "react";
 import { FaFacebook } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
 import { LuBadgeCheck } from "react-icons/lu";
+import {
+  FaReact,
+  FaJava,
+  FaLinkedin,
+  FaGithub,
+  FaNodeJs,
+  FaJsSquare,
+  FaPhp,
+} from "react-icons/fa";
+import { DiMongodb } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { projects } from "./projects";
+import Modal from "./components/Modal";
 
 import "./App.css";
 function App() {
-  const projects = [
-    {
-      id: 1,
-      title: "PSITS Website",
-      description:
-        " The PSITS Website is a custom-built platform for the College of Computer Studies and the Student Body Organization, specifically under PSITS (Philippine Society of Information Technology Students). This website facilitates the ordering of merchandise, uniforms, and other items by students. With an integrated Point of Sale (POS) system, the platform ensures smooth transaction processing, including receipt generation for every purchase. The website is designed to assist the organization's treasurers and officers by streamlining data compilation and inventory management, reducing the need for manual work and improving overall efficiency. It provides a practical tool for managing orders and transactions within the student organization",
-      image: "psits.png",
-      demoLink: "https://psits-web.vercel.app/",
-      codeLink: "https://github.com/Javabutdif/psits-web-react.git",
-    },
-    {
-      id: 2,
-      title: "MentalHelp PH (Capstone)",
-      description:
-        "Personalized Mental Health Professionals Matching Platform for Mental Health Support",
-      image: "mentalhelp.jpg",
-      demoLink: "#",
-      codeLink: "https://github.com/Javabutdif/MentalHelp-PH-React-Vite.git",
-    },
-    {
-      id: 3,
-      title: "System Architecture Project (Sit in Monitoring System)",
-      description:
-        "College of Computer Studies Sit in Monitoring System using Vanilla JS, Bootstrap , Chart JS and PHP",
-      image: "sit.png",
-      demoLink: "#",
-      codeLink: "https://github.com/Javabutdif/System_Integration.git",
-    },
-    {
-      id: 4,
-      title: "Restify (Elnet Project)",
-      description:
-        "Using ASP Net MVC to find a suitable Rent Place and display the information. It is not complete",
-      image: "restifywbg.jpg",
-      demoLink: "#",
-      codeLink: "https://github.com/Javabutdif/Restify_Core.git",
-    },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
+  const [isImage, setIsImage] = useState([]);
+
+  const handleOpenModal = (images) => {
+    setIsImage(images);
+
+    setIsOpen(true);
+  };
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -84,36 +70,51 @@ function App() {
                   <LuBadgeCheck className="mt-1" />
                   Credly Badges
                 </a>
+                <a
+                  href="https://www.linkedin.com/in/anton-james-genabio-2a4149316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black"
+                >
+                  <FaLinkedin className="mt-1" />
+                  LinkedIn
+                </a>
               </div>
               <div className="mt-6">
                 <p>Languages</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 mt-2">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-2 mt-2">
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
                     C#
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
+                    <FaJava className="mt-1" />
                     Java
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
+                    <FaReact className="mt-1" />
                     React
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
-                    Mongoose
+                    <DiMongodb className="mt-1" />
+                    Mongo DB
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
+                    <SiExpress className="mt-1" />
                     Express JS
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
+                    <FaNodeJs className="mt-1" />
                     Node JS
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
+                    <FaJsSquare className="mt-1" />
                     JavaScript
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
+                    <FaPhp className="mt-1" />
                     PHP
                   </button>
                   <button className="border p-2 rounded flex flex-row gap-2 hover:bg-white hover:text-black">
-                    ASP Net MVC
+                    <AiOutlineDotNet className="mt-1" />
+                    .NET MVC
                   </button>
                 </div>
               </div>
@@ -138,7 +139,7 @@ function App() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="rounded w-full h-36 object-cover mb-4"
+                    className="rounded w-full h-52 object-cover mb-4"
                   />
                   <h3 className="text-2xl font-bold">{project.title}</h3>
                   <p className="text-sm mt-2 overflow-y-scroll max-h-60 custom-scrollbar flex-grow">
@@ -162,7 +163,12 @@ function App() {
                         Website
                       </a>
                     )}
-
+                    <button
+                      className="bg-blue-400 px-4 py-2 rounded text-white hover:bg-blue-400"
+                      onClick={() => handleOpenModal(project.images)}
+                    >
+                      View
+                    </button>
                     <a
                       href={project.codeLink}
                       target="_blank"
@@ -177,6 +183,13 @@ function App() {
             </div>
           </section>
         </main>
+        {isOpen && (
+          <Modal
+            images={isImage}
+            isOpen={isOpen}
+            onClose={() => handleCloseModal()}
+          />
+        )}
       </div>
     </>
   );
