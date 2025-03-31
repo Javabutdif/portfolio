@@ -46,7 +46,7 @@ function App() {
                 Aspiring Fullstack Web Developer | Developer at PSITS UC-MAIN
               </p>
 
-              <div className="flex flex-wrap justify-center gap-2 mt-3">
+              <div className="flex flex-wrap gap-2 mt-3">
                 <a
                   href="https://www.facebook.com/jgenabs"
                   target="_blank"
