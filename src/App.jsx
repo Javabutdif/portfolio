@@ -170,14 +170,7 @@ function App() {
                     >
                       View
                     </button>
-                    <a
-                      href={project.codeLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-gray-500 px-4 py-2 rounded text-white hover:bg-gray-400"
-                    >
-                      Code
-                    </a>
+                    
                   </div>
                 </div>
               ))}
