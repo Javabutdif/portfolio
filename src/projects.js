@@ -20,7 +20,7 @@ export const projects = [
       "/psits/eventsstudents.png",
     ],
     demoLink: "https://psits-web.vercel.app/",
-    codeLink: "https://github.com/Javabutdif/psits-web-react.git",
+    
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ export const projects = [
       "/mental/profdash.png",
     ],
     demoLink: "#",
-    codeLink: "https://github.com/Javabutdif/MentalHelp-PH-React-Vite.git",
+    
   },
   {
     id: 3,
@@ -68,7 +68,7 @@ export const projects = [
       "/sitin/students.png",
     ],
     demoLink: "#",
-    codeLink: "https://github.com/Javabutdif/System_Integration.git",
+    
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const projects = [
       "/rest/landlords.png",
     ],
     demoLink: "#",
-    codeLink: "https://github.com/Javabutdif/Restify_Core.git",
+    
   },
   {
     id: 5,
@@ -102,6 +102,6 @@ export const projects = [
       "/swu/special_imaging.png",
     ],
     demoLink: "#",
-    codeLink: "https://github.com/Javabutdif/medical-center.git",
+    
   },
 ];
