@@ -43,7 +43,7 @@ function App() {
                 Anton James Genabio
               </h1>
               <p className="text-sm mt-2">
-                Aspiring Fullstack Web Developer | Developer at PSITS UC-MAIN
+                Aspiring Fullstack Web Developer 
               </p>
 
               <div className="flex flex-wrap gap-2 mt-3">
