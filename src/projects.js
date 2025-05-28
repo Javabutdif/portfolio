@@ -86,22 +86,5 @@ export const projects = [
     demoLink: "#",
     
   },
-  {
-    id: 5,
-    title: "SouthWestern University Medical Website",
-    description:
-      "SouthWestern University Medical Website – A MERN stack (MongoDB, Express JS, React JS, Node JS) web-based system designed to store patient profiles, manage medical reports through uploading and downloading, and maintain patient history for efficient medical record-keeping. The platform ensures secure and organized healthcare data management, enhancing accessibility for both patients and healthcare providers",
-    image: "swulanding.png",
-    images: [
-      "/swu/admindashboard.png",
-      "/swu/dashboard.png",
-      "/swu/login.png",
-      "/swu/register.png",
-      "/swu/medical_report.png",
-      "/swu/patient_profile.png",
-      "/swu/special_imaging.png",
-    ],
-    demoLink: "#",
-    
-  },
+  
 ];
