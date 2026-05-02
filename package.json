@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "packageManager": "npm@10.2.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "bootstrap": "npm install",
+    "setup:ai": "node scripts/setup-ai.js"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.15"
+  }
+}

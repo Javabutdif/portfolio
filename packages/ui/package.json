@@ -1,0 +1,10 @@
+{
+  "name": "@portfolio/ui",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "build": "echo \"Building UI package...\"",
+    "lint": "echo \"Linting UI package...\"",
+    "test": "echo \"Testing UI package...\""
+  }
+}
