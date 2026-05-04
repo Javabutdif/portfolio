@@ -135,7 +135,7 @@ export default function App() {
               <a href="#projects" className="btn-primary">
                 View Projects
               </a>
-              <a href="jamesgenabio31@gmail.com" className="btn-secondary">
+              <a href="mailto:jamesgenabio31@gmail.com" className="btn-secondary">
                 Contact Me
               </a>
             </motion.div>
