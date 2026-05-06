@@ -208,9 +208,7 @@ export default function App() {
             <div className="w-3 h-3 bg-white rounded-sm" />
             <span className="text-sm font-medium text-slate-300">Anton James Genabio</span>
           </div>
-          <a href="https://github.com/Javabutdif/portfolio" target="_blank" rel="noreferrer" className="text-sm text-slate-500 hover:text-white transition-colors flex items-center gap-1">
-            Source Code <ArrowUpRight size={12} />
-          </a>
+          
         </div>
       </footer>
 
