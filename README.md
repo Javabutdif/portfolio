@@ -1,6 +1,6 @@
 # Anton James Genabio - Portfolio
 
-A minimalist, high-performance web portfolio built for Anton James Genabio, an **Associate Software Engineer** at Accenture and **Aspiring AI Engineer**.
+A minimalist, high-performance web portfolio built for Anton James Genabio, an **Associate Software Engineer**.
 
 ## 🚀 Tech Stack
 
