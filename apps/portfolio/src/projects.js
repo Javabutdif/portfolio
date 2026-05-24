@@ -1,5 +1,17 @@
 export const projects = [
   {
+    id: 5,
+    title: 'Lessora AI',
+    subtitle: 'AI lesson planning assistant',
+    description:
+      'Building a mobile-first lesson planning app that helps teachers turn a topic, grade level, class duration, and learning goals into organized lesson plans. The Expo React Native client includes onboarding, authentication, a personalized dashboard, lesson plan creation, AI suggestion previews, and teaching analytics, backed by a Node.js and Express API with secure password hashing and lesson-generation service groundwork.',
+    tech: ['TypeScript', 'Expo', 'React Native', 'Node.js', 'Express', 'MongoDB'],
+    demoLink: 'https://github.com/Javabutdif/Lessora-AI',
+    linkLabel: 'View Repository',
+    year: '2026',
+    role: 'Fullstack developer',
+  },
+  {
     id: 1,
     title: 'PSITS Website',
     subtitle: 'Student org e-commerce',

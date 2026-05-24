@@ -151,8 +151,8 @@ export default function App() {
             <span className="text-eyebrow">Selected Work</span>
             <h2 className="heading-section">Projects</h2>
             <p className="text-body">
-              Production deployments spanning student organization e-commerce, 
-              healthcare matching platforms, and digitized monitoring systems.
+              Recent work spanning AI-assisted education tools, student organization
+              e-commerce, healthcare matching platforms, and digitized monitoring systems.
             </p>
           </div>
 

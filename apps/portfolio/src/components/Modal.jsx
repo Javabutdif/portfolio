@@ -65,7 +65,7 @@ export default function Modal({ project, onClose }) {
                 
                 {project.demoLink !== '#' ? (
                   <a href={project.demoLink} target="_blank" rel="noreferrer" className="btn-primary">
-                    View Live Site
+                    {project.linkLabel ?? 'View Live Site'}
                     <ArrowUpRight size={16} />
                   </a>
                 ) : (
