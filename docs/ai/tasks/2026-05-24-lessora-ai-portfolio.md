@@ -57,6 +57,8 @@
 ## Risks or dependencies
 
 - dependency 1: Lessora AI repository content was read from GitHub on 2026-05-24.
+- source repository: https://github.com/Javabutdif/Lessora-AI
+- portfolio contact source: https://github.com/Javabutdif
 
 ## Handoff notes
 
