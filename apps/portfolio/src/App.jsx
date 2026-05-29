@@ -113,7 +113,7 @@ export default function App() {
                 <span className="text-slate-500">Associate Software Engineer.</span>
               </h1>
               <div className="text-xl md:text-2xl font-medium text-slate-400 mb-6 flex items-center gap-2">
-                <span className="text-accent">&</span> Aspiring AI Engineer
+                <span className="text-accent">&</span> AI Engineer 
               </div>
             </motion.div>
 
