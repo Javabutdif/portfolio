@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 5,
     title: "Lessora AI",
-    subtitle: "AI lesson planning assistant",
+    subtitle: "AI-Powered Lesson Planning Platform",
     description:
       "Developing an AI-powered lesson planning platform that helps educators transform topics, grade levels, class durations, and learning objectives into structured lesson plans. Built with Expo React Native and supported by a Node.js and Express backend, the platform features onboarding, authentication, personalized dashboards, AI-generated lesson recommendations, analytics, and secure data management.",
     tech: [
